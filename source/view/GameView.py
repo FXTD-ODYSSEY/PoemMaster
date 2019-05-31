@@ -24,19 +24,6 @@ class GameView(base_class,form_class):
         super(GameView,self).__init__()
         self.setupUi(self)
         # Note 添加按钮样式
-        button_styleSheet = '''
-        QPushButton {
-            background:#038678;
-            border-radius:10px;
-
-            font: 75 20pt "微软雅黑";
-            font-weight:bold;
-        }
-
-        QPushButton:pressed {
-            background:#d92566;
-        }
-        '''
 
         self.score = 0
         self.question_char = ''
@@ -56,7 +43,6 @@ class GameView(base_class,form_class):
         # Note 循环数组添加点击事件
         for answer in self.answer_list:
             answer.clicked.connect(partial(self.checkAnswer,answer))
-            answer.setStyleSheet(button_styleSheet)
 
         self.poemDataHandler()
     
