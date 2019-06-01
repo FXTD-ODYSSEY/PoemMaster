@@ -12,6 +12,7 @@ Using PySide2 make a simple poem game
 
 > &emsp;&emsp;下面就是重写实现的效果。   
 > &emsp;&emsp;源码在 souce 文件夹中。   
+> &emsp;&emsp;pyinstaller 打包文件在 dist.zip 压缩包中。   
 
 ![PySide 重写效果演示](img/02.gif)
 

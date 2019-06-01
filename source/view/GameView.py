@@ -23,7 +23,6 @@ class GameView(base_class,form_class):
     def __init__(self):
         super(GameView,self).__init__()
         self.setupUi(self)
-        # Note 添加按钮样式
 
         self.score = 0
         self.question_char = ''

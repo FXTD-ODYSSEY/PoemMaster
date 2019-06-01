@@ -38,9 +38,7 @@ class NormalDialog(base_class,form_class):
         # Note 添加灰色遮盖
         self.label = QLabel(self.parent_window)
         self.label.resize(width, height)
-        pixmap = QPixmap(width, height)
-        pixmap.fill( QColor(0, 0, 0, 125) )
-        self.label.setPixmap(pixmap)
+        self.label.setStyleSheet('background:rbga(0, 0, 0, 125)')
 
         # Note 显示效果
         self.label.show()
